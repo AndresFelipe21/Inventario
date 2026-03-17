@@ -36,6 +36,8 @@ public class ViewPrincipal extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         btbStock = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
         ViewProducts = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -54,7 +56,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
         PanelPrincipal.setLayout(new java.awt.CardLayout());
 
         ViewPrincipal.setBackground(new java.awt.Color(244, 246, 248));
-        ViewPrincipal.setPreferredSize(new java.awt.Dimension(853, 340));
+        ViewPrincipal.setPreferredSize(new java.awt.Dimension(853, 440));
 
         jLabel1.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -66,6 +68,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
         btbProducts.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
         btbProducts.setForeground(new java.awt.Color(70, 70, 70));
         btbProducts.setText("Administar Productos");
+        btbProducts.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btbProducts.addActionListener(this::btbProductsActionPerformed);
 
         jLabel3.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
@@ -74,8 +77,13 @@ public class ViewPrincipal extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/proveedor 128x128.jpg"))); // NOI18N
 
+        btbSuppliers.setBackground(new java.awt.Color(230, 233, 237));
         btbSuppliers.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        btbSuppliers.setForeground(new java.awt.Color(70, 70, 70));
         btbSuppliers.setText("Administar Proveedores");
+        btbSuppliers.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btbSuppliers.setMaximumSize(new java.awt.Dimension(114, 19));
+        btbSuppliers.setMinimumSize(new java.awt.Dimension(114, 19));
         btbSuppliers.addActionListener(this::btbSuppliersActionPerformed);
 
         jLabel5.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
@@ -84,8 +92,13 @@ public class ViewPrincipal extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cliente 128x128.png"))); // NOI18N
 
+        btbCustomers.setBackground(new java.awt.Color(230, 233, 237));
         btbCustomers.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        btbCustomers.setForeground(new java.awt.Color(70, 70, 70));
         btbCustomers.setText("Administar Clientes");
+        btbCustomers.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btbCustomers.setMaximumSize(new java.awt.Dimension(114, 19));
+        btbCustomers.setMinimumSize(new java.awt.Dimension(114, 19));
         btbCustomers.addActionListener(this::btbCustomersActionPerformed);
 
         jLabel7.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 24)); // NOI18N
@@ -93,8 +106,13 @@ public class ViewPrincipal extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/stock 128x128.png"))); // NOI18N
 
+        btbStock.setBackground(new java.awt.Color(230, 233, 237));
         btbStock.setFont(new java.awt.Font("Malgun Gothic Semilight", 0, 12)); // NOI18N
+        btbStock.setForeground(new java.awt.Color(70, 70, 70));
         btbStock.setText("Gestionar Stock");
+        btbStock.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btbStock.setMaximumSize(new java.awt.Dimension(114, 19));
+        btbStock.setMinimumSize(new java.awt.Dimension(114, 19));
         btbStock.addActionListener(this::btbStockActionPerformed);
 
         jLabel9.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
@@ -143,13 +161,23 @@ public class ViewPrincipal extends javax.swing.JFrame {
                 .addGap(112, 112, 112)
                 .addComponent(jLabel7)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ViewPrincipalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSeparator1)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ViewPrincipalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSeparator2)
+                .addContainerGap())
         );
         ViewPrincipalLayout.setVerticalGroup(
             ViewPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ViewPrincipalLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jLabel7)
-                .addGap(72, 72, 72)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
                 .addGroup(ViewPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(ViewPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(ViewPrincipalLayout.createSequentialGroup()
@@ -163,7 +191,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
                             .addGap(18, 18, 18)
                             .addGroup(ViewPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(btbProducts)
-                                .addComponent(btbSuppliers))))
+                                .addComponent(btbSuppliers, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(ViewPrincipalLayout.createSequentialGroup()
                         .addGroup(ViewPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -177,9 +205,11 @@ public class ViewPrincipal extends javax.swing.JFrame {
                                 .addComponent(jLabel8)))
                         .addGap(18, 18, 18)
                         .addGroup(ViewPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btbCustomers)
-                            .addComponent(btbStock))))
-                .addContainerGap(35, Short.MAX_VALUE))
+                            .addComponent(btbCustomers, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btbStock, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(28, 28, 28)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(150, 150, 150))
         );
 
         PanelPrincipal.add(ViewPrincipal, "card4");
@@ -248,7 +278,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
                 .addGroup(ViewProductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(btbVolver))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(ViewProductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
@@ -269,7 +299,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
         );
         ViewCustomerLayout.setVerticalGroup(
             ViewCustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 591, Short.MAX_VALUE)
+            .addGap(0, 561, Short.MAX_VALUE)
         );
 
         PanelPrincipal.add(ViewCustomer, "card3");
@@ -282,7 +312,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
         );
         ViewSuppliersLayout.setVerticalGroup(
             ViewSuppliersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 591, Short.MAX_VALUE)
+            .addGap(0, 561, Short.MAX_VALUE)
         );
 
         PanelPrincipal.add(ViewSuppliers, "card5");
@@ -291,11 +321,11 @@ public class ViewPrincipal extends javax.swing.JFrame {
         ViewStock.setLayout(ViewStockLayout);
         ViewStockLayout.setHorizontalGroup(
             ViewStockLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 853, Short.MAX_VALUE)
         );
         ViewStockLayout.setVerticalGroup(
             ViewStockLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 591, Short.MAX_VALUE)
+            .addGap(0, 561, Short.MAX_VALUE)
         );
 
         PanelPrincipal.add(ViewStock, "card6");
@@ -363,6 +393,8 @@ public class ViewPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }
